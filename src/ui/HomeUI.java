@@ -1,9 +1,12 @@
+package ui;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 
+// Giao diện trang chủ (Home page)
 public class HomeUI {
     public Scene createScene() {
         /* Top */
@@ -18,9 +21,9 @@ public class HomeUI {
         );
 
         /* Center */
-        Button viewRooms = new Button("View Rooms");
-        Button bookRoom = new Button("Book a Room");
-        Button myBookings = new Button("My Bookings");
+        Button viewRooms = new Button("Đăng nhập");
+        Button bookRoom = new Button("Đăng ký");
+        Button myBookings = new Button("Cài đặt");
 
         HBox centerBox = new HBox(15, viewRooms, bookRoom, myBookings);
         centerBox.setStyle("-fx-alignment: center; -fx-padding: 20;");
